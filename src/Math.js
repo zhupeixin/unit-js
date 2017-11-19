@@ -1,4 +1,4 @@
-function factorial(n) {
+(function factorial(n) {
     if(n instanceof Array){
         return NaN;
     }
@@ -14,4 +14,4 @@ function factorial(n) {
         }
         return sum;
     }
-}
+})(math)
