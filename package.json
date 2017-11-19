@@ -1,11 +1,18 @@
 {
   "name": "unit-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "unit.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel src --watch --out-file dist/unit.js --source-maps && eslint src/**"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "朱培鑫",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.11.0"
+  }
 }
